@@ -11,11 +11,13 @@ body {
   border-radius: 12px;
 }
 .screen {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
   font-size: 42px;
   font-weight: 700;
   width: 100%;
   height: 48px;
-  text-align: right;
   border: 1px solid #222;
   border-radius: 3px;
   background: #fff;

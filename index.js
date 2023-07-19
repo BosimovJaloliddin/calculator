@@ -3,8 +3,15 @@ let screen = document.querySelector(".screen");
 let text = "";
 
 function getSymbol(e) {
-  text += e.target.innerText;
-  screen.textContent = text;
+  if (
+    +text.slice(text.length - 1, text.length) ||
+    +e.target.innerText ||
+    e.target.innerText === "(" ||
+    text.slice(text.length - 1, text.length) === "0"
+  ) {
+    text += e.target.innerText;
+    screen.textContent = text;
+  }
 }
 
 function getResult() {
