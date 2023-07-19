@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    <title>Kalkulyator</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="screen"></div>
+        <div class="symbol-items">
+            <button onclick="onClear()" class="symbol-clear clicking">C</button>
+            <button onclick="getSymbol(event)" class="symbol-item clicking">(</button>
+            <button onclick="getSymbol(event)" class="symbol-item clicking">)</button>
+            <button onclick="onDel()" class="symbol-del clicking">del</button>
+        </div>
+        <div class="symbol-items">
+            <button onclick="getSymbol(event)" class="symbol-item clicking">7</button>
+            <button onclick="getSymbol(event)" class="symbol-item clicking">8</button>
+            <button onclick="getSymbol(event)" class="symbol-item clicking">9</button>
+            <button onclick="getSymbol(event)" class="symbol-item clicking">/</button>
+        </div>
+        <div class="symbol-items">
+            <button onclick="getSymbol(event)" class="symbol-item clicking">4</button>
+            <button onclick="getSymbol(event)" class="symbol-item clicking">5</button>
+            <button onclick="getSymbol(event)" class="symbol-item clicking">6</button>
+            <button onclick="getSymbol(event)" class="symbol-item clicking">*</button>
+        </div>
+        <div class="symbol-items">
+            <button onclick="getSymbol(event)" class="symbol-item clicking">1</button>
+            <button onclick="getSymbol(event)" class="symbol-item clicking">2</button>
+            <button onclick="getSymbol(event)" class="symbol-item clicking">3</button>
+            <button onclick="getSymbol(event)" class="symbol-item clicking">-</button>
+        </div>
+        <div class="symbol-items">
+            <button onclick="getSymbol(event)" class="symbol-item clicking">0</button>
+            <button onclick="getSymbol(event)" class="symbol-item clicking">.</button>
+            <button onclick="getSymbol(event)" class="symbol-item clicking">+</button>
+            <button onclick="getResult()" class="symbol-res clicking">=</button>
+        </div>
+    </div>
+</body>
+<script src="./index.js"></script>
+
+</html>
